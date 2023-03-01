@@ -20,6 +20,15 @@ class Playlist {
     desertIslandPlaylist.remove("All You Need Is Love");
     // Prints ArrayList to terminal
     System.out.println(desertIslandPlaylist.toString() + "\n");
+    // Switch order of two songs
+    String songA = "Hey Jude";
+    String songB = "Lady Madonna";
+    int indexA = desertIslandPlaylist.indexOf(songA);
+    int indexB = desertIslandPlaylist.indexOf(songB);
+    desertIslandPlaylist.set(indexB, songA);
+    desertIslandPlaylist.set(indexA, songB);
+    // Prints ArrayList to terminal
+    System.out.println(desertIslandPlaylist.toString() + "\n");
   }
   
 }
