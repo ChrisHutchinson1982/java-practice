@@ -8,7 +8,11 @@ class Coffee {
     while(cupsOfCoffee <= 100) {
       System.out.println("Fry drinks cup of coffee #" + cupsOfCoffee);
       cupsOfCoffee++;
-    }       
+    }   
+    // refactored tio create same output using for loop
+    for (int i = 1; i <= 100; i++) {
+      System.out.println("Fry drinks cup of coffee #" + i);
+    }
     
   }
   
