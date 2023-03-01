@@ -12,6 +12,10 @@ class Playlist {
     desertIslandPlaylist.add("Let It Be");
     desertIslandPlaylist.add("Day Tripper");
     desertIslandPlaylist.add("All You Need Is Love");
+    // Prints ArrayList to terminal
+    System.out.println(desertIslandPlaylist.toString() + "\n");
+    // Prints number of songs in ArrayList to terminal
+    System.out.println(desertIslandPlaylist.size() + " songs \n");
   }
   
 }
