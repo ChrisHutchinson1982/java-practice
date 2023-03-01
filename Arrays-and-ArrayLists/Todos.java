@@ -50,10 +50,14 @@ class ToDos {
     poirotsToDos.remove("visit the crime scene");
     sherlocksToDos.remove("play violin");
 
-    System.out.println("\n Sherlock's updated to-do list:");
+    System.out.println("\nSherlock's updated to-do list:");
     System.out.println(sherlocksToDos.toString() + "\n");
     System.out.println("Poirot's updated to-do list:");
     System.out.println(poirotsToDos.toString());
+
+    // Use IndexOf to find index of value and print:
+    System.out.println("\nNumber of to-dos until case is solved:");
+    System.out.println(sherlocksToDos.indexOf("solve the case"));
   
   }
   
