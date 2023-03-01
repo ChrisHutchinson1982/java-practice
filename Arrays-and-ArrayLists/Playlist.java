@@ -16,6 +16,10 @@ class Playlist {
     System.out.println(desertIslandPlaylist.toString() + "\n");
     // Prints number of songs in ArrayList to terminal
     System.out.println(desertIslandPlaylist.size() + " songs \n");
+    // Remove All You Need Is Love song in ArrayList
+    desertIslandPlaylist.remove("All You Need Is Love");
+    // Prints ArrayList to terminal
+    System.out.println(desertIslandPlaylist.toString() + "\n");
   }
   
 }
