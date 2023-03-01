@@ -34,6 +34,16 @@ class ToDos {
     System.out.println("\nPoirot's second to-do:");
     // Print Poirot's second to-do:
     System.out.println(poirotsToDos.get(1));
-  }
+
+    // Set changes index to new value for each to-do below:
+    sherlocksToDos.set(1, "listen to Dr. Watson for amusement");
+
+    poirotsToDos.set(3, "listen to Captain Hastings for amusement");
+
+    System.out.println("Sherlock's to-do list:");
+    System.out.println(sherlocksToDos.toString() + "\n");
+    System.out.println("Poirot's to-do list:");
+    System.out.println(poirotsToDos.toString());
+}
   
 }
