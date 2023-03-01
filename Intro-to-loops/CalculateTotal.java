@@ -20,5 +20,5 @@ class CalculateTotal {
     System.out.println(total);
     
   }
-  
+   
 }
