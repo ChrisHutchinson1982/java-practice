@@ -20,6 +20,11 @@ public class Review {
     System.out.println(string1.toUpperCase());
     // toLowerCase() makes string upppercase
     System.out.println(string1.toLowerCase());
+    // substring() to print world
+    System.out.println(string1.substring(6, 11));
+
+    String address = "940 Lorimer";
+    System.out.println(address.substring(0, 3));
   }
   
 }
