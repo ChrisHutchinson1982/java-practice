@@ -44,6 +44,17 @@ class ToDos {
     System.out.println(sherlocksToDos.toString() + "\n");
     System.out.println("Poirot's to-do list:");
     System.out.println(poirotsToDos.toString());
-}
+
+    // Remove each to-do below:
+    sherlocksToDos.remove("visit the crime scene");
+    poirotsToDos.remove("visit the crime scene");
+    sherlocksToDos.remove("play violin");
+
+    System.out.println("\n Sherlock's updated to-do list:");
+    System.out.println(sherlocksToDos.toString() + "\n");
+    System.out.println("Poirot's updated to-do list:");
+    System.out.println(poirotsToDos.toString());
+  
+  }
   
 }
