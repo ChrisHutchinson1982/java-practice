@@ -19,6 +19,13 @@ public class ATM{
     }
   }
 
+  public void depositMoney(int amountToDeposit){
+    if(amountToDeposit <= this.money){
+      this.money += amountToDeposit;
+      totalMoney += amountToDeposit;
+    }
+  }
+
   public static void averageMoney(){
     System.out.println(totalMoney / numATMs);
   }
@@ -33,7 +40,11 @@ public class ATM{
     System.out.println("Total amount of money in all ATMs: " + ATM.totalMoney);  
     firstATM.withdrawMoney(500);
     secondATM.withdrawMoney(200);
-    System.out.println("Total amount of money in all ATMs: " + ATM.totalMoney);    
+    System.out.println("Total amount of money in all ATMs: " + ATM.totalMoney); 
+    
+    firstATM.depositMoney(200);
+    secondATM.depositMoney(100);
+    System.out.println("Total amount of money in all ATMs: " + ATM.totalMoney);   
 
     // Call averageMoney() here
     ATM.averageMoney();
