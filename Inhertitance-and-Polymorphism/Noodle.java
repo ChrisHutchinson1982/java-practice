@@ -23,6 +23,9 @@ public class Noodle {
   
   public static void main(String[] args) {
     
+    Noodle noodle = new Noodle(30.1, 10.1, "long and round", "flour");
+    System.out.println(noodle.ingredients);
+
     Ramen yasaiRamen = new Ramen();
     System.out.println(yasaiRamen.ingredients);
     System.out.println(yasaiRamen.isTasty());
