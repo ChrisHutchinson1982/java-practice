@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Language {
 
   protected String name;
@@ -19,16 +21,20 @@ class Language {
   }
 
   public static void main(String[] args) {
+    ArrayList<Language> languageList = new ArrayList<Language>();
+
     Language spanish = new Language("Spanish", 555000000, "Spain, Latin America, and Equatorial Guinea", "subject-verb-object");
-    spanish.getInfo();
-
-    Language mayan = new Mayan("Chontal", 36810);
-    mayan.getInfo();
-
+    Language mayan = new Mayan("Chontal", 36810); 
     Language mandarinChinese = new SinoTibetan("Mandarin Chinese", 900000000);
-    mandarinChinese.getInfo();
-
     Language burmese = new SinoTibetan("Burmese", 35000000);
-    burmese.getInfo();
+
+    languageList.add(spanish);
+    languageList.add(mayan);
+    languageList.add(mandarinChinese);
+    languageList.add(burmese);
+
+    for (Language language : languageList) {
+      language.getInfo();
+    }
   }
 }
